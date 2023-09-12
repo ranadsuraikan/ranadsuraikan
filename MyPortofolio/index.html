@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ren-Home</title>
+</head>
+<body>
+    <nav>
+        <ul>
+           <li><a href="/">Home</a></li>
+           <li><a href="/product">Product</a></li>
+           <li><a href="/gallery">Gallery</Pa></li>
+           <li><a href="/blog">Blog</a></li>
+           <li><a href="/inventory">Inventory</a></li>
+        </ul>
+    </nav>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Styled Profile</title>
+</head>
+<body>
+   
+    <div class="header">
+        <div class="person">
+            <div class="image">
+                <img src="wallhaven-x6d513_1920x1080.png" alt="logo">
+            </div>
+            <div>
+                <h4>Ranji Adi Sura</h4>
+                
+                <p class="fe">Front End Developer</p>
+                
+                <div class="person-cta">
+                    <a href="#" class="kontak-btn">Kontak</a>
+                    <a href="#" class="resume-btn">Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="person-data">
+            <div class="label">
+                <strong>Availabilty</strong>
+                <p>Fulltime</p>
+            </div>
+            <div class="label">
+                <strong>Usia</strong>
+                <p>19</p>
+            </div>
+            <div class="label">
+                <strong>Lokasi</strong>
+                <p>Medan</p>
+            </div>
+            <div class="label">
+                <strong>Pengalaman</strong>
+                <p>2</p>
+            </div>
+            <div class="label">
+                <strong>Email</strong>
+                <p>sura@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="form">
+        <input type="text" id="name" name="name" placeholder="Nama:"><br>
+        <input type="text" id="role" name="role" placeholder="Role:"><br>
+        <input type="text" id="avai" name="avai" placeholder="Availability:"><br>
+        <input type="text" id="usia" name="usia" placeholder="Usia:"><br>
+        <input type="text" id="lokasi" name="lokasiu" placeholder="Lokasi:"><br>
+        <input type="text" id="Years" name="Years" placeholder="Years Experience:"><br>
+        <input type="text" id="email" name="email" placeholder="email:"><br>
+        <input type="button" class ="submit" value="Submit" onclick="submitForm()">
+
+
+
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2023 Ranji Adi Sura</p>
+    </footer>
+      
+    <script>
+        function submitForm() {
+            // Mengambil nilai dari input
+            var nama = document.getElementById("name").value;
+            var role = document.getElementById("role").value;
+            var availability = document.getElementById("avai").value;
+            var usia = document.getElementById("usia").value;
+            var lokasi = document.getElementById("lokasi").value;
+            var experience = document.getElementById("Years").value;
+            var email = document.getElementById("email").value;
+    
+            // Memasukkan nilai ke dalam elemen dengan class "header"
+            var header = document.querySelector(".header");
+            header.innerHTML = `
+                <div class="person">
+                    <div class="image">
+                        <img src="wallhaven-x6d513_1920x1080.png" alt="logo">
+                    </div>
+                    <div>
+                        <h4>${nama}</h4>
+                        <p class="fe">${role}</p>
+                        <div class="person-cta">
+                            <a href="#" class="kontak-btn">Kontak</a>
+                            <a href="#" class="resume-btn">Resume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="person-data">
+                    <div class="label">
+                        <strong>Availabilty</strong>
+                        <p>${availability}</p>
+                    </div>
+                    <div class="label">
+                        <strong>Usia</strong>
+                        <p>${usia}</p>
+                    </div>
+                    <div class="label">
+                        <strong>Lokasi</strong>
+                        <p>${lokasi}</p>
+                    </div>
+                    <div class="label">
+                        <strong>Pengalaman</strong>
+                        <p>${experience}</p>
+                    </div>
+                    <div class="label">
+                        <strong>Email</strong>
+                        <p>${email}</p>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+    
+</body>
+</html>
